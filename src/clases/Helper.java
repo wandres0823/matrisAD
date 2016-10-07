@@ -329,5 +329,18 @@ public class Helper {
         
     }
     
+ public static String recorridoDiagonalSecundariaArriba(int[][] m) {
+        int nf = m.length;
+        int nc = m[0].length;
+        
+        String aux = "";
+         for (int i = 0; i <nf; i++) {
+            for (int j = 0; j < nf; j++) {
+              if (nf -1 -i == j) {
+               aux = aux + m[i][i]+ ", ";
+                }
+            
+        }
+        return aux;
 
-}
+    }
